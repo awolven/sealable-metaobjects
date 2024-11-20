@@ -34,7 +34,7 @@
 ;;; It is an error to change the class of an instance of a sealable
 ;;; metaobject.
 
-(defclass sealable-metaobject-instance (t)
+(defclass sealable-metaobject-instance (#-allegro t)
   ())
 
 (defmethod change-class :around
